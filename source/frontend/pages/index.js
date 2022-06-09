@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <SideBar />
       <NavBar />
-      <div className="font-extrabold">Hehehehe</div>
+      <div className="font-extrabold">Hehehehehe</div>
     </>
   );
 }
