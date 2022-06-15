@@ -14,24 +14,24 @@ const NavBar = () => {
               </a>
             </Link>
             <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-              <Link href="/">
+              {/* <Link href="/">
                 <a className="mr-5 hover:text-gray-900 cursor-pointer hover:underline transition-all underline-offset-4 decoration-2 text-lg font-semibold decoration-blue-600 hover:dark:text-gray-300 dark:decoration-blue-300">
                   Home
                 </a>
-              </Link>
+              </Link> */}
               {/* <div className="">
                 <SearchBar />
               </div> */}
               <Link href="/allcontributors">
                 <a className="mr-5 hover:text-gray-900 cursor-pointer hover:underline transition-all underline-offset-4 decoration-2 text-lg font-semibold decoration-blue-600 hover:dark:text-gray-300 dark:decoration-blue-300">
-                  All Contributors
+                  Search 
                 </a>
               </Link>
-              <Link href="/whattodo">
+              {/* <Link href="/whattodo">
                 <a className="mr-5 hover:text-gray-900 cursor-pointer hover:underline transition-all underline-offset-4 decoration-2 text-lg font-semibold decoration-blue-600 hover:dark:text-gray-300 dark:decoration-blue-300">
                   What to do?
                 </a>
-              </Link>
+              </Link> */}
               <div className="absolute top-0 right-0 p-5 mx-auto">
                 <button className="font-bold inline-flex items-center bg-gray-100 border-0 p-3 focus:outline-none hover:bg-gray-200 hover:shadow-teal-400 hover:text-slate-900 rounded-xl mt-4 md:mt-0 text-lg transition-all dark:bg-gray-600">
                   Connect
