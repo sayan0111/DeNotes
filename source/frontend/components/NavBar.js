@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import SearchBar from "./SearchBar";
+
 const NavBar = () => {
   return (
     <>
@@ -37,6 +38,7 @@ const NavBar = () => {
                   Connect
                 </button>
               </div>
+            
             </nav>
           </div>
         </header>
