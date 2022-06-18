@@ -1,23 +1,24 @@
 import React from "react";
-
+import Dropzone from "../components/Dropzone";
+import UploadImg from "../components/UploadImg";
 const Post = () => {
   return (
     <>
       <div className="grid place-items-center bg-slate-800">
         <div className="py-3 bg-slate-800 w-96  ">
-          <form>
+          <htmlForm>
             <div classame="flex justify-center">
               <div className="mb-3 xl:w-96">
                 <label
-                  for="titleFormControlInput1"
-                  class="form-label inline-block mb-2 text-gray-400"
+                  htmlFor="titlehtmlFormControlInput1"
+                  class="htmlForm-label inline-block mb-2 text-gray-400"
                 >
                   Title
                 </label>
                 <input
                   type="text"
                   className="
-        form-control
+        htmlForm-control
         block
         w-full
         px-3
@@ -34,8 +35,8 @@ const Post = () => {
         m-0
       focus:border-blue-600 focus:outline-none
       "
-                  id="exampleFormControlInput1"
-                  placeholder="Graph theory notes for dummies"
+                  id="examplehtmlFormControlInput1"
+                  placeholder="Graph theory notes htmlFor dummies"
                 />
               </div>
             </div>
@@ -44,15 +45,15 @@ const Post = () => {
             <div classame="flex justify-center">
               <div className="mb-3 xl:w-96">
                 <label
-                  for="titleFormControlInput1"
-                  class="form-label inline-block mb-2 text-gray-400"
+                  htmlFor="titlehtmlFormControlInput1"
+                  class="htmlForm-label inline-block mb-2 text-gray-400"
                 >
                   One liner Description
                 </label>
                 <input
                   type="text"
                   className="
-        form-control
+        htmlForm-control
         block
         w-full
         px-3
@@ -69,26 +70,26 @@ const Post = () => {
         m-0
       focus:border-blue-600 focus:outline-none
       "
-                  id="descriptionFormControlInput1"
+                  id="descriptionhtmlFormControlInput1"
                   placeholder="Graph theory notes for dummies"
                 />
               </div>
             </div>
 
             {/* new one */}
-          <div>
-            <div classame="flex justify-center">
-              <div className="mb-3 xl:w-96">
-                <label
-                  for="titleFormControlInput1"
-                  class="form-label inline-block mb-2 text-gray-400"
-                >
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  className="
-        form-control
+            <div>
+              <div classame="flex justify-center">
+                <div className="mb-3 xl:w-96">
+                  <label
+                    htmlFor="titlehtmlFormControlInput1"
+                    class="htmlForm-label inline-block mb-2 text-gray-400"
+                  >
+                    Subject
+                  </label>
+                  <input
+                    type="text"
+                    className="
+        htmlForm-control
         block
         w-full
         px-3
@@ -105,26 +106,26 @@ const Post = () => {
         m-0
       focus:border-blue-600 focus:outline-none
       "
-                  id="descriptionFormControlInput1"
-                  placeholder="Basic Electrical"
-                />
+                    id="descriptionhtmlFormControlInput1"
+                    placeholder="Basic Electrical"
+                  />
+                </div>
               </div>
-            </div>
 
-            {/* neonw */}
-          
-            <div classame="flex justify-center">
-              <div className="mb-3 xl:w-96">
-                <label
-                  for="titleFormControlInput1"
-                  class="form-label inline-block mb-2 text-gray-400"
-                >
-                  Price
-                </label>
-                <input
-                  type="text"
-                  className="
-        form-control
+              {/* neonw */}
+
+              <div classame="flex justify-center">
+                <div className="mb-3 xl:w-96">
+                  <label
+                    htmlFor="titlehtmlFormControlInput1"
+                    class="htmlForm-label inline-block mb-2 text-gray-400"
+                  >
+                    Price
+                  </label>
+                  <input
+                    type="text"
+                    className="
+        htmlForm-control
         block
         w-full
         px-3
@@ -141,11 +142,11 @@ const Post = () => {
         m-0
       focus:border-blue-600 focus:outline-none
       "
-                  id="descriptionFormControlInput1"
-                  placeholder="0.000003"
-                />
+                    id="descriptionhtmlFormControlInput1"
+                    placeholder="0.000003"
+                  />
+                </div>
               </div>
-            </div>
             </div>
             {/* <div className="flex items-start mb-6">
               <div className="flex items-center h-5">
@@ -158,7 +159,7 @@ const Post = () => {
                 />
               </div>
               <label
-                for="remember"
+                htmlFor="remember"
                 className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 Remember me
@@ -167,7 +168,7 @@ const Post = () => {
             <div className="grid grid-flow-col gap-8">
               <div>
                 <label
-                  for="countries"
+                  htmlFor="countries"
                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
                 >
                   Department
@@ -190,7 +191,7 @@ const Post = () => {
               </div>
               <div>
                 <label
-                  for="countries"
+                  htmlFor="countries"
                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
                 >
                   Semester
@@ -210,26 +211,37 @@ const Post = () => {
                 </select>
               </div>
             </div>
-            <div className="">
+            <div className="pt-4">
               <label
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                for="file_input"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                htmlFor="file_input"
               >
-                Upload PDF
+                Upload Notes(.pdf)
               </label>
+
               <input
                 class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                 id="file_input"
                 type="file"
               />
+
+              <div className="pt-4">
+                <UploadImg />
+              </div>
+              <div className=" pt-4">
+                <p className="text-gray-400">Add Demo Images</p>
+                <Dropzone />
+              </div>
             </div>
+            <div className="pt-4">
             <button
               type="submit"
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Submit
             </button>
-          </form>
+            </div>
+          </htmlForm>
         </div>
       </div>
     </>
