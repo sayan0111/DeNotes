@@ -1,9 +1,15 @@
 import React from "react";
+import { useState } from "react";
 import Dropzone from "../components/Dropzone";
 import UploadImg from "../components/UploadImg";
+import { useMoralis } from "react-moralis";
+import { ConnectButton } from "web3uikit";
 const Post = () => {
+
+  const{isAuthenticated,Moralis}=useMoralis()
   return (
     <>
+    {isAuthenticated?(
       <div className="grid place-items-center bg-slate-800">
         <div className="py-3 bg-slate-800 w-96  ">
           <htmlForm>
@@ -234,16 +240,22 @@ const Post = () => {
               </div>
             </div>
             <div className="pt-4">
-            <button
-              type="submit"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Submit
-            </button>
+              <button
+                type="submit"
+                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Submit
+              </button>
             </div>
           </htmlForm>
         </div>
       </div>
+      ):(
+        
+        <div className="h-screen bg-slate-800 flex items-center">
+         <h1 className="text-white text-3xl pl-96 ml-16 font-semibold">Connect your Wallet to Upload Notes</h1>
+        </div>
+      )}
     </>
   );
 };

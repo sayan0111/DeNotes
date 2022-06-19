@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import SearchBar from "./SearchBar";
-
+import { ConnectButton } from "web3uikit";
 const NavBar = () => {
   return (
     <>
@@ -23,22 +23,30 @@ const NavBar = () => {
               {/* <div className="">
                 <SearchBar />
               </div> */}
-              <Link href="/allcontributors">
+              {/* <Link href="/allcontributors">
                 <a className="mr-5 hover:text-gray-900 cursor-pointer hover:underline transition-all underline-offset-4 decoration-2 text-lg font-semibold decoration-blue-600 hover:dark:text-gray-300 dark:decoration-blue-300">
-                  Search 
+                  Search
                 </a>
-              </Link>
+
+
+              </Link> */}
+
+              <SearchBar/>
               {/* <Link href="/whattodo">
                 <a className="mr-5 hover:text-gray-900 cursor-pointer hover:underline transition-all underline-offset-4 decoration-2 text-lg font-semibold decoration-blue-600 hover:dark:text-gray-300 dark:decoration-blue-300">
                   What to do?
                 </a>
               </Link> */}
-              <div className="absolute top-0 right-0 p-5 mx-auto">
-                <button className="font-bold inline-flex items-center bg-gray-100 border-0 p-3 focus:outline-none hover:bg-gray-200 hover:shadow-teal-400 hover:text-slate-900 rounded-xl mt-4 md:mt-0 text-lg transition-all dark:bg-gray-600">
-                  Connect
-                </button>
+              <div className="absolut top-0 right-0">
+                <Link href="/postNote">
+                  <div className="text-gray-white font-semibold text-2xl hover:underline transition-all underline-offset-4 decoration-2 text-lg font-semibold decoration-blue-600 hover:dark:text-gray-300 dark:decoration-blue-300 ">
+                    Sell
+                  </div>
+                </Link>
               </div>
-            
+              <div className="absolute top-0 right-0 p-5 mx-auto">
+                <ConnectButton className="py-4 " />
+              </div>
             </nav>
           </div>
         </header>

@@ -13,7 +13,10 @@ function App() {
                 <div className="bg-slate-800">
                 <input type="file" onChange={handleChange} />
                 </div>
-            <img src={file}/>
+            <img src={file}
+            
+            
+            />
   
         </div>
   

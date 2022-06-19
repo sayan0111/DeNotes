@@ -1,4 +1,10 @@
 const Post=require("../models/Post")
+const multer=require("multer")
+
+
+
+
+
 
 const post_all= async (req,res)=>{
   try{
