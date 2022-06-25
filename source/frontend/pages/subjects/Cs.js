@@ -5,7 +5,7 @@ const Cs = () => {
   return (
     <>
       <div className="bg-slate-800 py-6">
-        <div className="text-white font-semibold text-3xl">
+        <div className="text-white font-semibold text-3xl py-9">
           Computer Science
         </div>
         <SubjctCard/>
