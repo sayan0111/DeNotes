@@ -3,9 +3,9 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <div className="text-white grid md:grid-cols-5 bg-skin-lightBlue p-10 grid-cols-1 mt-10 bottom-0 bg-slate-800 ">
+      <div className=" text-white grid md:grid-cols-5 bg-skin-lightBlue p-10 grid-cols-1 mt-10 bottom-0 bg-slate-800 ">
         <div className=" text-center m-auto">
-          <img className="w-56 m-auto" src="/Logo.png" alt="logo" />
+          <img className="w-56 m-auto" src="/DeNotes-trans.png" alt="logo" />
         </div>
         <div className=" m-auto text-center md:text-left my-7">
           <h2 className="text-xl font-bold mb-2">Know Us</h2>

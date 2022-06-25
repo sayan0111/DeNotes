@@ -1,15 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Bg = () => {
   return (
     <>
-    <div className='bg-slate-900 -z-10 '>
-    <div class="h-screen bg-slate-800">
-        
-    </div>
-    </div>
+      <div class="h-auto bg-slate-800"></div>
     </>
-  )
-}
+  );
+};
 
-export default Bg
+export default Bg;
