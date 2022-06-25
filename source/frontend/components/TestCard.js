@@ -3,48 +3,54 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
+import Link from "next/link";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 const TestCard = () => {
   return (
     <>
       <div className="grid grid-cols-4 grid-flow-row gap-4">
-        <div>
-          <Card sx={{ maxWidth: 345 }} className="bg-slate-700 text-white ">
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image="https://www.lighthouselabs.ca/uploads/post/open_graph_image/459/Coding-vs-programming.jpg"
-                alt="green iguana"
-              />
-              <CardContent className="">
-                <Typography
-                  gutterBottom
-                  variant="h5"
-                  component="div"
-                  className="font-semibold"
-                >
-                 Computer Science
-                </Typography>
-                {/* <Typography variant="body2" color="text.secondary" className="text-white">
+        <Link href="/subjects/Cs">
+          <div className="transition ease-in-out hover:-translate-y-3">
+            <Card sx={{ maxWidth: 345 }} className="bg-slate-700 text-white ">
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image="https://www.lighthouselabs.ca/uploads/post/open_graph_image/459/Coding-vs-programming.jpg"
+                  alt="green iguana"
+                />
+                <CardContent className="">
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                    className="font-semibold"
+                  >
+                    COMPUTER SCIENCE
+                  </Typography>
+                  {/* <Typography variant="body2" color="text.secondary" className="text-white">
               Lizards are a widespread group of squamate reptiles, with over
               6,000 species, ranging across all continents except Antarctica
             </Typography> */}
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button size="small" color="primary">
-                Browse
-              </Button>
-            </CardActions>
-          </Card>
-        </div>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button size="small" color="primary">
+                  Browse
+                </Button>
+              </CardActions>
+            </Card>
+          </div>
+        </Link>
         {/* card2 */}
-        <div className="">
-          <Card sx={{ maxWidth: 345 }} className="bg-slate-700 text-white w-screen ">
+       
+        <div className="transition ease-in-out hover:-translate-y-3">
+          <Card
+            sx={{ maxWidth: 345 }}
+            className="bg-slate-700 text-white w-screen "
+          >
             <CardActionArea>
               <CardMedia
-                
                 component="img"
                 height="140"
                 image="https://assets.skyfilabs.com/images/blog/eceminiproject.jpg"
@@ -59,10 +65,14 @@ const TestCard = () => {
                 >
                   ELECTRONICS
                 </Typography>
-                <Typography variant="body2" color="text.secondary" className="text-white">
-              Lizards areoup of squamate reptiles, with over
-              6,000 sp except Antarctica
-            </Typography>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  className="text-white"
+                >
+                  Lizards areoup of squamate reptiles, with over 6,000 sp except
+                  Antarctica
+                </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
@@ -73,7 +83,7 @@ const TestCard = () => {
           </Card>
         </div>
         {/* card3 */}
-        <div>
+        <div className="transition ease-in-out hover:-translate-y-3">
           <Card sx={{ maxWidth: 345 }} className="bg-slate-700 text-white ">
             <CardActionArea>
               <CardMedia
@@ -105,7 +115,7 @@ const TestCard = () => {
           </Card>
         </div>
         {/* card4 */}
-        <div>
+        <div className="transition ease-in-out hover:-translate-y-3">
           <Card sx={{ maxWidth: 345 }} className="bg-slate-700 text-white ">
             <CardActionArea>
               <CardMedia
@@ -137,7 +147,7 @@ const TestCard = () => {
           </Card>
         </div>
         {/* card5 */}
-        <div>
+        <div className="transition ease-in-out hover:-translate-y-3">
           <Card sx={{ maxWidth: 345 }} className="bg-slate-700 text-white ">
             <CardActionArea>
               <CardMedia
@@ -153,7 +163,7 @@ const TestCard = () => {
                   component="div"
                   className="font-semibold"
                 >
-                 CHEMISTRY
+                  CHEMISTRY
                 </Typography>
                 {/* <Typography variant="body2" color="text.secondary" className="text-white">
               Lizards are a widespread group of squamate reptiles, with over
@@ -169,7 +179,7 @@ const TestCard = () => {
           </Card>
         </div>
         {/* card6 */}
-        <div>
+        <div className="transition ease-in-out hover:-translate-y-3">
           <Card sx={{ maxWidth: 345 }} className="bg-slate-700 text-white ">
             <CardActionArea>
               <CardMedia
@@ -185,7 +195,7 @@ const TestCard = () => {
                   component="div"
                   className="font-semibold"
                 >
-                 HUMANITIES
+                  HUMANITIES
                 </Typography>
                 {/* <Typography variant="body2" color="text.secondary" className="text-white">
               Lizards are a widespread group of squamate reptiles, with over
@@ -201,7 +211,7 @@ const TestCard = () => {
           </Card>
         </div>
         {/* card7*/}
-        <div>
+        <div className="transition ease-in-out hover:-translate-y-3">
           <Card sx={{ maxWidth: 345 }} className="bg-slate-700 text-white ">
             <CardActionArea>
               <CardMedia
@@ -217,7 +227,7 @@ const TestCard = () => {
                   component="div"
                   className="font-semibold"
                 >
-                 MECHANICAL
+                  MECHANICAL
                 </Typography>
                 {/* <Typography variant="body2" color="text.secondary" className="text-white">
               Lizards are a widespread group of squamate reptiles, with over
@@ -233,7 +243,7 @@ const TestCard = () => {
           </Card>
         </div>
         {/* card8*/}
-        <div>
+        <div className="transition ease-in-out hover:-translate-y-3">
           <Card sx={{ maxWidth: 345 }} className="bg-slate-700 text-white ">
             <CardActionArea>
               <CardMedia

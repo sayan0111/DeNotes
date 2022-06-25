@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Bg from "../components/Bg";
 import styles from "../styles/Home.module.css";
-import HomeMain from "./homeMain";
+import HomeMain from "./testHome";
 
 export default function Home() {
   return (
